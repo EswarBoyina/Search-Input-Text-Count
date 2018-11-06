@@ -1,0 +1,13 @@
+
+#in feature file we write the feature to test then we write scenarios,under scenaio we write the test steps
+
+
+Feature: Searching input text results count
+
+  Scenario: Count the results that google auto populate for input text
+    Given   Open browser with Google home page   
+    When    enter "Test Automation" into the search textbox 
+    Then    Auto suggestion list related to "Test Automation" are shown
+    Then    Check the count of "Test Automation" displayed in the results page 
+    And     Print the "Test Automation" displayed in the result page
+
